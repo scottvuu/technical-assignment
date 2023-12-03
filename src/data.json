@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Celebrating New Year",
+      "content": "One more year loaded with sweet recollections and cheerful times has passed. All my friends made my year exceptionally uncommon, and I wish this continues forever. With you around, each minute is a unique event for me. I wish you to Happy new year to all of you.",
+      "createdAt": "2023-01-01T08:00:00Z",
+      "User": {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "username": "john_doe",
+        "avatarUrl": "https://mui.com/static/images/avatar/1.jpg"
+      },
+      "Comments": [
+        {
+          "id": "1",
+          "content": "Wish you a very happy new year Brother.",
+          "createdAt": "Sat Dec 02 2023 16:55:54 GMT+0700 (Indochina Time)",
+          "User": {
+            "id": "2",
+            "username": "jorge_parker",
+            "firstName": "Jorge",
+            "lastName": "Parker",
+            "avatarUrl": "https://img.freepik.com/free-photo/3d-illustration-boy-with-camera-his-hand_1142-36694.jpg?w=1380&t=st=1701502802~exp=1701503402~hmac=bd93af0b419f9ed715cfa0e8238a03d57759690c64c845ae8a79f0c5eb6c4cf6"
+          }
+        },
+        {
+          "id": "2",
+          "content": "Where is celebration party jorge?",
+          "createdAt": "Sat Dec 02 2023 16:55:54 GMT+0700 (Indochina Time)",
+          "parentCommentId": "1",
+          "User": {
+            "id": "2",
+            "username": "alina",
+            "firstName": "Alina",
+            "lastName": "Vu",
+            "avatarUrl": "https://mui.com/static/images/avatar/3.jpg"
+          }
+        },
+        {
+          "id": "3",
+          "content": "Don’t forgot to invite me",
+          "createdAt": "Sat Dec 02 2023 16:55:54 GMT+0700 (Indochina Time)",
+          "parentCommentId": "1",
+          "User": {
+            "id": "2",
+            "username": "kristina_smith",
+            "firstName": "Kristina",
+            "lastName": "Smith",
+            "avatarUrl": "https://mui.com/static/images/avatar/4.jpg"
+          }
+        },
+        {
+          "id": "4",
+          "content": "Party is not possible without me.",
+          "createdAt": "Sat Dec 02 2023 16:55:54 GMT+0700 (Indochina Time)",
+          "parentCommentId": "3",
+          "User": {
+            "id": "1",
+            "username": "jacob_parker",
+            "firstName": "Jacob",
+            "lastName": "Parker",
+            "avatarUrl": "https://mui.com/static/images/avatar/1.jpg"
+          }
+        },
+        {
+          "id": "4",
+          "content": "Happy new year.",
+          "createdAt": "Sat Dec 02 2023 16:55:54 GMT+0700 (Indochina Time)",
+          "User": {
+            "id": "5",
+            "username": "andrew",
+            "firstName": "Andrew",
+            "lastName": "Nguyen",
+            "avatarUrl": "https://example.com/avatar1.jpg"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Scott",
+      "lastName": "Vu",
+      "username": "admin123",
+      "password": "c639fa00b76e4d7fbde1d2c939da4377fec70415f646826ebb47deb51b89fab1",
+      "id": "7a45aa4d-f810-4d26-94f9-b5686b689bb4"
+    }
+  ]
+}

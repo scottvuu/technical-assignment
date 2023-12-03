@@ -1,6 +1,7 @@
 {
   "name": "technical-assignment",
   "version": "0.1.0",
+  "homepage": "https://scottvuu.github.io/technical-assignment",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +56,8 @@
   "devDependencies": {
     "@types/luxon": "^3.3.6",
     "crypto-browserify": "^3.12.0",
-    "crypto-js": "^4.2.0"
+    "crypto-js": "^4.2.0",
+    "gh-pages": "^6.1.0"
   },
   "browser": {
     "crypto": false

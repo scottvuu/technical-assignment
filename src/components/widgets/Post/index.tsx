@@ -62,12 +62,12 @@ export const Post = ({ post }: Props) => {
       });
     };
 
-  const onAddComment = (value: string, item?: CommentType) => {
+  const onAddComment = (value: string, item?: CommentType, parentCommentId?: string) => {
     const payload = {
       ...item,
       content: value,
       postId: post.id,
-      parentCommentId: item?.id,
+      parentCommentId: parentCommentId || item?.id,
       User: user,
     };
     dispatch(addComment(payload));
@@ -200,8 +200,6 @@ export const Post = ({ post }: Props) => {
                   {hasChildren && hasViewMore && (
                     <>
                       {item.childrenComments?.map((childrenItem, index) => {
-                        // const hasViewMoreSubChildren =
-                        //   viewMoreComment?.[childrenItem.id];
                         const hasSubChildrenItems =
                           !!childrenItem.childrenComments?.length;
                         const isLastItem =
@@ -294,7 +292,8 @@ export const Post = ({ post }: Props) => {
                                               onSend={(value) =>
                                                 onAddComment(
                                                   value,
-                                                  subChildrenItem
+                                                  subChildrenItem,
+                                                  childrenItem?.id
                                                 )
                                               }
                                               sx={{

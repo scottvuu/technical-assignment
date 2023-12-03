@@ -1,47 +1,63 @@
-# Getting Started with Create React App
+# ✨ Technical Assignment ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Overview
 
-## Available Scripts
+Welcome to this project! It's a ReactJS masterpiece crafted with the TypeScript template, adorned with the stunning Material-UI framework. Redux, with its magic touch, manages the state, and redux-persist ensures the state's persistence in the enchanting realm of local storage.
 
-In the project directory, you can run:
+## 🛠️ Magic Setup
 
-### `npm start`
+To immerse yourself in the magic, follow these enchanted steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Summon Dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Incantation to Start Development Server:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-### `npm test`
+## 🔮 Enchanted Screens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Authentication Spells
 
-### `npm run build`
+Behold the Authentication spells, including the mystical Sign In and Sign Up screens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Sign In: `/sign-in`
+- Sign Up: `/sign-up`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 🌟 Default Account Incantation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For those without an account, use this mystical incantation:
 
-### `npm run eject`
+- Username: admin123
+- Password: 12344321
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Main Screen Magic
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The main screen, the Posts screen, is currently conjured with illusions from the `src/data.json` file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ✨ Enchanted Post Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Comment Conjuring
 
-## Learn More
+Only the initiated can cast comments. Cast your comments at level 1 (lv 1) or level 2 (lv 2).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Editing and Deleting Enchantments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# technical-assignment
+Should you be the comment sorcerer, hover over your creation to reveal the options icon (three dots) for magical editing or deletion.
+
+### Comment Hierarchy Sorcery
+
+Experience the magic of comment hierarchy—up to three levels: Parent > Children > Sub-Children. Replying to a Sub-Children comment keeps the magic at the same level.
+
+### Mention Charms
+
+When casting replies, the mentioned user's name is woven into the magic.
+
+Please note, for simplicity and the user's mystical experience, nested levels are enchanted up to three. Enjoy the magic! ✨

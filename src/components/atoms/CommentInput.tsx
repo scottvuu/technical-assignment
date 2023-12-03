@@ -18,7 +18,7 @@ export const CommentInput = forwardRef((props: Props,ref) => {
       InputProps={{
         sx: { borderRadius: 25, outlineWidth: 1, border: "none" },
         size: "small",
-        ref,
+        inputRef: ref,
         endAdornment: (
           <InputAdornment position="start">
             <IconButton

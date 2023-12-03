@@ -49,7 +49,7 @@ export const Comment = ({
   children,
   ...props
 }: Props) => {
-  const commentInputRef = useRef(null) as any;
+  const commentInputRef = useRef() as any;
   const navigate = useNavigate();
   const theme = useTheme();
   const user = useAppSelector(userSelector);
@@ -90,6 +90,10 @@ export const Comment = ({
   const onReplyComment = () => {
     if (user) {
       setShowInput(true);
+      if(user?.id !== comment?.User?.id){
+        formik.setFieldValue("content",`${comment?.User?.firstName} ${comment?.User?.lastName} `)
+      }
+      commentInputRef?.current?.focus();
     } else {
       navigate("/sign-in");
     }
@@ -206,6 +210,7 @@ export const Comment = ({
             <Box mx={0} my={2}>
               <form onSubmit={formik.handleSubmit}>
                 <CommentInput
+                  autoFocus
                   placeholder="Let write comment"
                   fullWidth
                   name="content"
